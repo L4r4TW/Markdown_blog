@@ -13,6 +13,7 @@ router.get("/:slug", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  console.log("new");
   let article = new Article({
     title: req.body.title,
     description: req.body.description,
@@ -20,11 +21,40 @@ router.post("/", async (req, res) => {
   });
   try {
     article = await article.save();
+    console.log(article.slug);
     res.redirect(`/articles/${article.slug}`);
   } catch (e) {
     console.log(e);
     res.render("articles/new", { article: article });
   }
+});
+
+router.put("/:id", async (req, res) => {
+  let article = await Article.findById(req.body.id);
+  console.log(article);
+
+  article.title = req.body.title;
+  article.description = req.body.description;
+  article.markdown = req.body.markdown;
+  console.log(article);
+  // try {
+  //   article.save();
+  //   res.redirect(`articles/${article.slug}`);
+  // } catch (e) {
+  //   console.log(e);
+  //   res.render("articles/new", { article: article });
+  // }
+});
+
+router.get("/edit/:id", async (req, res) => {
+  const article = await Article.findById(req.params.id);
+  if (article == 0) res.redirect("/");
+  res.render("articles/edit", { article: article });
+});
+
+router.delete("/:id", async (req, res) => {
+  await Article.findByIdAndDelete(req.params.id);
+  res.redirect("/");
 });
 
 module.exports = router;
