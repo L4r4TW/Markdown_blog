@@ -30,24 +30,25 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/:id", async (req, res) => {
-  let article = await Article.findById(req.body.id);
+  console.log("put");
+  let article = await Article.findById(req.params.id);
   console.log(article);
 
   article.title = req.body.title;
   article.description = req.body.description;
   article.markdown = req.body.markdown;
   console.log(article);
-  // try {
-  //   article.save();
-  //   res.redirect(`articles/${article.slug}`);
-  // } catch (e) {
-  //   console.log(e);
-  //   res.render("articles/new", { article: article });
-  // }
+  try {
+    article.save();
+    res.redirect(`/articles/${article.slug}`);
+  } catch (e) {
+    console.log(e);
+    res.render("/articles/new", { article: article });
+  }
 });
 
-router.get("/edit/:id", async (req, res) => {
-  const article = await Article.findById(req.params.id);
+router.get("/edit/:slug", async (req, res) => {
+  const article = await Article.findOne({ slug: req.params.slug });
   if (article == 0) res.redirect("/");
   res.render("articles/edit", { article: article });
 });
