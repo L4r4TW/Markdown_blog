@@ -54,25 +54,27 @@ The blog will be accessible at: http://localhost:3000
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you’d like to improve the project: 1. Fork the repository. 2. Create a feature branch:
+Contributions are welcome! If you’d like to improve the project:
+1️⃣ Fork the repository.
+2️⃣ Create a feature branch:
 
 ```bash
 git checkout -b feature-new-feature
 ```
 
-    3.	Commit your changes:
+3️⃣ Commit your changes:
 
 ```bash
 git commit -m "Added new feature"
 ```
 
-    4.	Push to your branch:
+4️⃣ Push to your branch:
 
 ```bash
 git push origin feature-new-feature
 ```
 
-    5.	Open a pull request.
+5️⃣ Open a pull request.
 
 ⸻
 
