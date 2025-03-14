@@ -29,73 +29,67 @@ This is a simple **Markdown blog** built using **Node.js, Express, MongoDB, and 
 
 ## 📦 Installation & Setup
 
-### 1️⃣ Clone the Repository
+1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/L4r4TW/Markdown_blog
 cd markdown_blog
+```
 
 2️⃣ Install Dependencies
 
+```bash
 npm install
+```
 
-3️⃣  Start the Application
+3️⃣ Start the Application
 
+```bash
 node server.js
+```
 
 The blog will be accessible at: http://localhost:3000
 
 ⸻
 
-🛠 API Endpoints
+## 🤝 Contributing
 
-Method	Route	Description
-GET	/	View all blog posts
-POST /articles/new	Save a new blog post
-GET	/articles/:slug	View a single post
-PUT	/articles/edit/:slug	Update a blog post
-DELETE	articles/:id	Delete a blog post
+Contributions are welcome! If you’d like to improve the project: 1. Fork the repository. 2. Create a feature branch:
 
-⸻
-
-🤝 Contributing
-
-Contributions are welcome! If you’d like to improve the project:
-	1.	Fork the repository.
-	2.	Create a feature branch:
-
+```bash
 git checkout -b feature-new-feature
+```
 
+    3.	Commit your changes:
 
-	3.	Commit your changes:
-
+```bash
 git commit -m "Added new feature"
+```
 
+    4.	Push to your branch:
 
-	4.	Push to your branch:
-
+```bash
 git push origin feature-new-feature
+```
 
-
-	5.	Open a pull request.
+    5.	Open a pull request.
 
 ⸻
 
-📝 License
+## 📝 License
 
 This project is open-source and available under the MIT License.
 
 ⸻
 
-📬 Contact
+## 📬 Contact
 
 If you have any questions or suggestions, feel free to reach out!
-	•	GitHub: @L4r4TW
-	•	Discord: l4r4TW
+• GitHub: @L4r4TW
+• Discord: l4r4TW
 
 ⸻
 
 🔥 Happy Coding! 🚀
 
 ---
-```
