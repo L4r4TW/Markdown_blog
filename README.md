@@ -55,8 +55,8 @@ The blog will be accessible at: http://localhost:3000
 ## 🤝 Contributing
 
 Contributions are welcome! If you’d like to improve the project:
-1️⃣ Fork the repository.
-2️⃣ Create a feature branch:
+1️⃣ Fork the repository.\
+2️⃣ Create a feature branch:\
 
 ```bash
 git checkout -b feature-new-feature
