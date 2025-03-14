@@ -89,7 +89,9 @@ This project is open-source and available under the MIT License.
 ## 📬 Contact
 
 If you have any questions or suggestions, feel free to reach out!
+
 • GitHub: @L4r4TW
+
 • Discord: l4r4TW
 
 ⸻
